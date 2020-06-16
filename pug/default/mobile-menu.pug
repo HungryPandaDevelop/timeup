@@ -1,0 +1,14 @@
+.mobile-menu.element-show(data-showEl="0")
+  .mm-header.main-grid
+    .logo
+      a(href="./index.html")
+        img(src="../images/logo.png")
+        .logo-text TimeUp
+    .close
+  ul.ln
+    each val in ["О сервисе","FAQ","Регистрация","Контакты"]
+      li 
+        a(href="#")
+          = val
+  .btn-wc
+    a.btn.white-border(href="#") Войти

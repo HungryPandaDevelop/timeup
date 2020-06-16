@@ -1,0 +1,88 @@
+doctype html
+html
+	body.cabinet-wrapper
+		// head
+		include default/head.pug 
+		// head
+
+		// header
+    
+		include default/header-black.pug
+		// header
+
+		.stub
+		
+    
+		.cabinet-all.main-grid
+			.cabinet-body
+				.cabinet-event 
+					h2 Заголовок размещенного мероприятия в несколько строк
+					.cabinet-event-container
+						.ce-head
+							.ce-gallery
+								.gallery-main
+									img(src="../images/1.jpg")
+								.gallery-navigation
+									.g-prev
+									.g-next
+									.img-container
+										img(src="../images/1.jpg")
+										img(src="../images/1.jpg")
+										img(src="../images/1.jpg")
+							.ce-info
+								.ce-line
+									span Категория:
+									span Категория 3
+								.ce-line
+									span Город:
+									span Новосибирск
+								.ce-line
+									span Адрес:
+									span Адрес 21
+								.ce-line
+									span Этаж:
+									span 2
+								.ce-line
+									span Кабинет, зал:
+									span Зал 2
+								.ce-line
+									span Телефон:
+									span 8 (999) 999 99 99
+								.ce-line
+									span Время и дата:
+									span 12 Июня 20:00
+								.btn-wc
+									a.btn.orange(href="#") Редактировать 
+						.ce-body 
+							h3 Заголовок 1
+							p Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris. Suspendisse felis sem, condimentum ullamcorper est sit amet.
+							h3 Заголовок 2
+							p Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris. Suspendisse felis sem, condimentum ullamcorper est sit amet, molestie mollis nulla. Etiam lorem orci, consequat ac magna quis, facilisis vehicula neque.
+							h3 Заголовок с пунктами
+							ul 
+								li Пункт 1
+								li Пункт 2
+								li Пункт 3
+								li Пункт 4
+							p Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris. 
+			.cabinet-side
+				.auto-jsCalendar(data-language="ru")
+				.cabinet-info
+					h3 Ваш тарифный план
+					.ci-line
+						span Тариф:
+						span Тариф
+					.ci-line
+						span Оплачено до:
+						span 23.03.2020
+					.ci-line
+						span Осталось мероприятий:
+						span 23
+					.ci-line
+						span Ограничения по городу:
+						span Нет ограничений
+					.ci-line
+						span Активные мероприятия:
+						span 5
+			.btn-wc-bottom
+				a.btn.orange(href="#") Редактировать

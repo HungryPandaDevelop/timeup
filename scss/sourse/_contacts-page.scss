@@ -1,0 +1,15 @@
+.contacts-page {
+  h2 {
+    font-size: $mediumSize;
+    margin: 0 0 30px;
+  }
+
+  .form {
+    grid-column: span 6;
+  }
+
+  .feedback {
+    grid-column: 8/span 5;
+    font-size: $mediumSize;
+  }
+}

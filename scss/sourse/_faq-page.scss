@@ -1,0 +1,13 @@
+.faq-page {
+  padding: 0 0 60px;
+
+  .qp-head {
+    grid-column: span 12;
+    font-size: $mediumSize;
+    margin: 0 0 15px;
+  }
+
+  .question-item {
+    grid-column: span 6;
+  }
+}

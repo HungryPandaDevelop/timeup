@@ -1,0 +1,109 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// header
+		include default/header.pug
+		// header
+
+		.full-top
+			img.full-top-img(src="../images/full-top.jpg")
+			.main-grid
+				h1
+					| Все о сервисе.
+					br 
+					| От идеи, создания, до этапов обновлений и дальнейшего
+					br
+					| развития
+		.about-content
+			.main-grid
+				.about-top Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+			.idea-item.main-grid
+				h2 Идея
+				.idea-person
+					img(src="../images/face.jpg")
+					h3 Елена Жорова
+					h4 Founder
+				.idea-description
+					| Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris.
+	
+			.idea-item.main-grid
+				h2 От идеи, до большого рабочего проекта
+				.idea-person
+					img(src="../images/face.jpg")
+					h3 Игорь Болтовский
+					h4 CEO
+				.idea-description
+					| Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris.
+
+		.stages-container
+			h2 
+				| Релизация, этапы развития,
+				br
+				| дальнейшие обновления
+			.line-center
+			.stages-item.main-grid
+				h3 Основной функционал для полноценной работы сервиса
+				.stage-description
+					b Для организаторов:
+					ul
+						li Разработан удобный личный кабинет
+						li Добавлен функционал добавления мероприятий на платформу
+						li Реализовано  добавление новостей на платформу для пользователей
+						li Добавлена доска отследивания ваших мероприятий на платформе
+					b Для пользователей 
+					ul
+						li Разработан удобный интерфейс регистрации, при регистрации вы выбираете интересные вам категории.
+						li Лучшим образом реализована сортировка мероприятий в календаре 
+						li Реализован личный календарь, в который вы можете добавлять свои личные события
+						li Добавлен функционал карточек мероприятий, в котором вы можете поменить мероприятие кнопкой «Иду!» и приложение автоматически добавит его в ваш личный календарь, а так же вовремя напомнит о событии
+						li Добавлена карточка организаторов, где вы можете посмотреть всю информацию о органиаторе, предстоящих и прошедших событиях, а так же подписаться на организатора, что бы появлялись новости от него в вашей информационной ленте
+						li Разработана информационная лента, в которой вам предосмтавляется информация от организаторов, на которых вы подписаны, системные и инфорационные новости
+			.line-center
+			.stages-item.main-grid
+				h3 Следующий этап крупных обновлений и добавление нового функционала
+				.stage-description
+					b Для организаторов:
+					ul
+						li Разработан удобный личный кабинет
+						li Добавлен функционал добавления мероприятий на платформу
+						li Реализовано  добавление новостей на платформу для пользователей
+						li Добавлена доска отследивания ваших мероприятий на платформе
+					b Для пользователей 
+					ul
+						li Разработан удобный интерфейс регистрации, при регистрации вы выбираете интересные вам категории.
+						li Лучшим образом реализована сортировка мероприятий в календаре 
+						li Реализован личный календарь, в который вы можете добавлять свои личные события
+						li Добавлен функционал карточек мероприятий, в котором вы можете поменить мероприятие кнопкой «Иду!» и приложение автоматически добавит его в ваш личный календарь, а так же вовремя напомнит о событии
+						li Добавлена карточка организаторов, где вы можете посмотреть всю информацию о органиаторе, предстоящих и прошедших событиях, а так же подписаться на организатора, что бы появлялись новости от него в вашей информационной ленте
+						li Разработана информационная лента, в которой вам предосмтавляется информация от организаторов, на которых вы подписаны, системные и инфорационные новости
+
+		.line-center
+		.about-question
+			h2 
+				|Какие дальнейшие варианты развития
+				br
+				| платформы?
+			.question-tabs-cotnainer.main-grid
+				each val in ["","","",""]
+					.tc-item
+						| Разработка функционала для проведение онлайн-мероприятий 
+			.question-answer-container.main-grid
+				.qa-item.main-grid
+					.qa-person
+						img(src="../images/face.jpg")
+						h3 Игорь Болтовский
+						h4 CEO
+					.qa-description
+						| Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris.
+				.qa-item.main-grid
+						.qa-person
+							img(src="../images/face.jpg")
+							h3 Игорь Болтовский
+							h4 CEO
+						.qa-description
+							| Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris.
+

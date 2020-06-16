@@ -1,0 +1,19 @@
+// mobile-menu
+include mobile-menu.pug
+// mobile-menu
+header.header-black
+  .main-grid
+    .logo
+      a(href="./index.html")
+        img(src="../images/logo.png")
+        .logo-text InTime
+    nav
+      ul
+        each val,index in ["О сервисе", "Вопросы", "Регистрация организаторов","Контакты"]
+          li 
+            a(href="#")
+              = val 
+      .btn-wc.accaunt-head
+        img(src="../images/face.jpg").accaunt-img
+        .accaunt-link
+.hamburger.color

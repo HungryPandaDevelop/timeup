@@ -1,0 +1,21 @@
+// mobile-menu
+include mobile-menu.pug
+// mobile-menu
+// popup-feedback
+include popup-feedback.pug
+// popup-feedback
+header
+  .main-grid
+    .logo
+      a(href="./index.html")
+        img(src="../images/logo.png")
+        .logo-text InTime
+    nav
+      ul
+        each val,index in ["О сервисе", "Вопросы", "Регистрация организаторов","Контакты"]
+          li 
+            a(href="#")
+              = val 
+      .btn-wc
+        a.btn(href="#") Войти
+.hamburger.element-btn(data-showEl="0")
