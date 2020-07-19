@@ -34,8 +34,9 @@ header {
   }
 }
 
-.account-head {
+.accaunt-head {
   margin: -5px 0 0 0;
+  position: relative;
 }
 
 .accaunt-img {
@@ -45,6 +46,7 @@ header {
   position: relative;
   object-fit: cover;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .accaunt-link {

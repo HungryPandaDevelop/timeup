@@ -49,9 +49,21 @@ $(document).ready(function () {
   });
   $.parallaxify();
 
+  var showAccountTime;
+  $(".accaunt-img, .accaunt-link").hover(function () {
+    $(".popup-account").addClass("show");
+    clearTimeout(showAccountTime);
 
-
-
+  }, function () {
+    showAccountTime = setTimeout(function () {
+      $(".popup-account").removeClass("show");
+    }, 250);
+  });
+  $(".popup-account").hover(function () {
+    clearTimeout(showAccountTime);
+  }, function () {
+    $(".popup-account").removeClass("show");
+  });
 
 
 

@@ -10,9 +10,6 @@ textarea,
   background: $whiteColor;
   resize: none;
 
-  &.btn {
-    border: 0;
-  }
 }
 
 
@@ -134,7 +131,15 @@ textarea,
 .popup-wrapper {
   @include positionElement(100%, 100%, 0, 0, left, top, 3, flex, fixed);
   background: $blackColor;
-  display: none;
+  transition: ease-out 0.25s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup-wrapper.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup-container {
@@ -181,5 +186,61 @@ textarea,
   }
 }
 
+.form-link {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
 /* -----popup-----*/
+/* -----popup-accautnt----*/
+.popup-account {
+  @include positionElement(350px, auto, 0px, calc(100% + 30px), right);
+  border-radius: 5px;
+  background: $whiteColor;
+  padding: 15px;
+  text-align: left;
+  box-shadow: $shadow;
+  transition: ease-out 0.25s;
+  opacity: 0;
+  visibility: hidden;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:before {
+    content: "";
+    @include positionElement(20px, 20px, 30px, -8px, right);
+    background: $whiteColor;
+    transform: rotate(45deg);
+    box-shadow: -3px -5px 13px -6px rgba(0, 0, 0, 0.5);
+  }
+
+  .pc-head {
+    display: flex;
+  }
+
+
+  h3 {
+    padding: 11px 0px 15px 15px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+  ul,
+  li {
+    display: block;
+  }
+}
+
+/* -----popup-accautnt----*/

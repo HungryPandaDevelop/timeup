@@ -4,6 +4,9 @@ include mobile-menu.pug
 // popup-feedback
 include popup-feedback.pug
 // popup-feedback
+// popup-enter
+include popup-enter.pug
+// popup-enter
 header
   .main-grid
     .logo
@@ -17,5 +20,5 @@ header
             a(href="#")
               = val 
       .btn-wc
-        a.btn(href="#") Войти
+        a.btn.element-btn(href="#" data-showEl="1") Войти
 .hamburger.element-btn(data-showEl="0")
