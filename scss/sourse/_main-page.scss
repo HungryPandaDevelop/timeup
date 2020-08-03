@@ -423,10 +423,27 @@ h2.global {
   .slider-img {
     grid-column: span 6;
     text-align: center;
+    position: relative;
 
     .mobile-3 {
       width: 30%;
       min-width: 240px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      opacity: 0;
+      visibility: hidden;
+      transition: ease-out 0.5s;
+      transform: translateY(30px);
+      transition-delay: 0.0s;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        transition-delay: 0.5s;
+      }
     }
 
     .page {

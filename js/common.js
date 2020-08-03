@@ -27,8 +27,16 @@ $(document).ready(function () {
 
     dots: false,
     nav: true,
-    items: 1
+    items: 1,
+    onChanged: callback
   });
+
+  function callback(event) {
+
+    var items = event.item.count; // Number of items
+    var item = event.item.index; // Position of the current item
+    $(".mobile-3").removeClass("active").eq(item).addClass("active");
+  }
 
   if ($(window).width() < 988) {
     var owlRew = $(".review-owl");
