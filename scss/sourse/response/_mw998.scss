@@ -261,8 +261,21 @@ nav {
   }
 
   .slider-img {
-    grid-column: span 12;
-    grid-row: 1;
+    @include positionElement(100%, 100%, 0, 0);
+
+    .mobile-3,
+    .page {
+      bottom: 0;
+      left: 32%;
+      width: 36%;
+      min-width: auto;
+      position: absolute;
+    }
+
+    .page {
+      width: 80%;
+      left: 10%;
+    }
   }
 }
 

@@ -226,8 +226,25 @@
     padding-bottom: 15px;
   }
   .section-slider .slider-img {
-    grid-column: span 12;
-    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: block;
+    z-index: auto;
+  }
+  .section-slider .slider-img .mobile-3,
+.section-slider .slider-img .page {
+    bottom: 0;
+    left: 32%;
+    width: 36%;
+    min-width: auto;
+    position: absolute;
+  }
+  .section-slider .slider-img .page {
+    width: 80%;
+    left: 10%;
   }
 
   .section-partners {
