@@ -283,10 +283,17 @@ nav {
     }
 
     .page {
-      width: 80%;
+      width: 90%;
       left: 10%;
     }
   }
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
 }
 
 
