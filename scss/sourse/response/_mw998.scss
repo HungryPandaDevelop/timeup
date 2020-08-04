@@ -149,6 +149,11 @@ nav {
   }
 }
 
+.line-2 {
+
+  filter: blur(3px);
+}
+
 .section-text {
   h2 {
     font-size: $largeSize;
