@@ -1125,6 +1125,7 @@ h2.global span {
   grid-column: span 4;
   font-size: 14px;
   margin: 0 0 30px;
+  background: #ffffff;
 }
 .question-item .qi-ico {
   width: 42px;
