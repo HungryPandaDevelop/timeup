@@ -141,6 +141,10 @@
     filter: blur(3px);
   }
 
+  .line-3 {
+    filter: blur(3px);
+  }
+
   .section-text h2 {
     font-size: 21px;
     text-align: center;
