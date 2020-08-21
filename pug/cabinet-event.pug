@@ -22,13 +22,12 @@ html
 							.ce-gallery
 								.gallery-main
 									img(src="../images/1.jpg")
-								.gallery-navigation
-									.g-prev
-									.g-next
+								.gallery-navigation.detail-all-img
+									.g-prev.up
+									.g-next.down
 									.img-container
-										img(src="../images/1.jpg")
-										img(src="../images/1.jpg")
-										img(src="../images/1.jpg")
+										each val in ["1","2","3","4","1","2","3","4","1","2","3","4"]
+											img.dai-item(src="../images/"+val+".jpg")
 							.ce-info
 								.ce-line
 									span Категория:

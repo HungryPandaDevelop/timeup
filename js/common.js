@@ -74,5 +74,39 @@ $(document).ready(function () {
   });
 
 
+  var deatailItem = $(".dai-item");
 
+  $(".dai-item").slice(0, 3).addClass("show");
+
+  $(".detail-all-img .down").on("click", function () {
+
+    if ($(".dai-item.show").last().next().length > 0) {
+      $(".dai-item.show").first().removeClass("show");
+      $(".dai-item.show").last().next().addClass("show");
+    }
+
+
+  });
+
+  $(".detail-all-img .up").on("click", function () {
+
+    if ($(".dai-item.show").first().prev().length > 0) {
+      $(".dai-item.show").last().removeClass("show");
+      $(".dai-item.show").first().prev().addClass("show");
+    }
+  });
+
+
+  $(".dai-item").on("click", function () {
+
+    firstSrc = $(".gallery-main img").attr("src");
+
+    var imgSrc = $(this).attr("src");
+
+    $(this).attr("src", firstSrc);
+
+    $(".gallery-main img").attr("src", imgSrc);
+
+
+  });
 });
