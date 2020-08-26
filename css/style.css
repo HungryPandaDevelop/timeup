@@ -154,6 +154,16 @@ h2 {
   display: block;
 }
 
+.wrapper,
+header {
+  transition: ease-out 0.25s;
+  filter: blur(0px);
+}
+
+.blur {
+  filter: blur(10px);
+}
+
 /*-----defaul-----*/
 /*-----btns-----*/
 .btn {
@@ -348,7 +358,7 @@ textarea,
   position: fixed;
   display: flex;
   z-index: 3;
-  background: #444444;
+  background: rgba(0, 0, 0, 0.5);
   transition: ease-out 0.25s;
   opacity: 0;
   visibility: hidden;
@@ -883,8 +893,8 @@ h2.global span {
 }
 .section-phone .sp-about li:before {
   content: "";
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   left: -55px;
   top: 0;
   position: absolute;
@@ -893,7 +903,7 @@ h2.global span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("../images/ok.jpg");
+  background-image: url("../images/signs-2.png");
 }
 .section-phone .sp-about b {
   font-weight: normal;
@@ -1006,6 +1016,7 @@ h2.global span {
   font-size: 14px;
   display: inline-block;
   margin: 0 30px;
+  position: relative;
 }
 .event-item .ei-head {
   display: flex;
@@ -1020,13 +1031,16 @@ h2.global span {
 }
 .event-item .description {
   position: relative;
-  margin: 0 0 17px;
+  margin: 0 0 35px;
 }
 .event-item .ei-footer {
   display: flex;
   justify-content: space-between;
   color: #a4a4a4;
   margin: 0 0 0px;
+  position: absolute;
+  bottom: 15px;
+  width: calc(100% - 30px);
 }
 .event-item .btn-wc {
   margin: -7px 0 0;
@@ -1600,6 +1614,12 @@ h2.global span {
   font-family: "medium";
   color: #feb25d;
   grid-column: span 3;
+  transition: ease-out 0.5s;
+}
+.tc-item:hover {
+  background: #feb25d;
+  color: #ffffff;
+  transform: scaleX(-1);
 }
 
 .question-answer-container .qa-item {
@@ -1798,7 +1818,8 @@ h2.global span {
   box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
   padding-top: 31px;
   border-radius: 0 0 6px 6px;
-  height: 100vh;
+  /*height: 100vh;*/
+  height: 100%;
   position: fixed;
   left: 74%;
   top: 0;

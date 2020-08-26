@@ -12,46 +12,48 @@ html
 
 		.stub
 		
-		.cabinet-all.main-grid
-			.cabinet-body
-				h2 Регистрация организатора
-				.registration-hint Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.
+		.wrapper
+			.cabinet-all.main-grid
+				.cabinet-body
+					h2 Регистрация организатора
+					.registration-hint Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.
 
-				.registration-body
-					each val in ["Название организации*","Юредическое название*:","ИНН:"]
+					.registration-body
+						each val in ["Название организации*","Юредическое название*:","ИНН:"]
+							.reg-line
+								label 
+									= val
+								input(type="text")
 						.reg-line
 							label 
-								= val
-							input(type="text")
-					.reg-line
-						label 
-							| Адрес главного офиса*:
-						input(type="text" placeholder="Город")
-						label
-						input.third(type="text" placeholder="Улица")
-						input.third(type="text" placeholder="Офис")
-					.reg-line
-						label 
-							| Расскажите об организаторе*:
-						textarea
-					each val in ["Email*:","Сайт:","Instagram:","VK:"]
+								| Адрес главного офиса*:
+							input(type="text" placeholder="Город")
+							label
+							input.third(type="text" placeholder="Улица")
+							input.third(type="text" placeholder="Офис")
 						.reg-line
 							label 
-								= val
-							input(type="text")
-					.reg-line.file-line
-						label Добавить логотип организатора*:
-						.btn-wc
-							a.btn.small.btn-file(href="#")
-								i
-								span Добвить
-					h3 Ваша контактная информация
-					each val in ["Имя*:","Фамилия*:","Позиция в компании*:","Телефон организации*:"]
-						.reg-line
-							label 
-								= val
-							input(type="text")
+								| Расскажите об организаторе*:
+							textarea
+						each val in ["Email*:","Сайт:","Instagram:","VK:"]
+							.reg-line
+								label 
+									= val
+								input(type="text")
+						.reg-line.file-line
+							label Добавить логотип организатора*:
+							.btn-wc
+								a.btn.small.btn-file(href="#")
+									i
+									span Добвить
+						h3 Ваша контактная информация
+						.registration-hint При регистрации наши менеджеры свяжутся с вами. Данная информация не видна пользователям
+						each val in ["Имя*:","Фамилия*:","Позиция в компании*:","Телефон организации*:"]
+							.reg-line
+								label 
+									= val
+								input(type="text")
 
-				.registration-hint.second Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.
-			.btn-wc-bottom
-				input.btn.orange.btn-registration(type="submit" value="Зарегестрироваться")
+					.registration-hint.second Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.
+				.btn-wc-bottom
+					input.btn.orange.btn-registration(type="submit" value="Зарегестрироваться")

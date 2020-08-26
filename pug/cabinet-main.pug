@@ -9,88 +9,88 @@ html
     
 		include default/header-black.pug
 		// header
-
-		.stub
-		
-    
-		.cabinet-all.main-grid
-			.cabinet-body
-				.subhead-cabinet
-					h2 Активные мероприятия
-					a.btn.orange.add-element(href="#")  
-						i +
-						span Создать мероприятие
-				.event-container-cabinet.main-grid
-					each val in ["","","","","",""]
-						.event-item
-							.ei-head
-								.data 
-									i 
-									| 2 Июня 12:30
-								.category-name Категория мероприятия
-							h3 Заголовок размещенного мероприятия в несколько…
-							.description Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus.
-							.ei-footer
-								.place 
-									i
-									| Новосибирск
-								.btn-wc
-									a(href="#").btn.orange-border.small Подробнее
-				.subhead-cabinet
-					h2 Ваши новости
-					a.btn.orange.add-element(href="#")  
-						i +
-						span Создать новость
-				.event-container-cabinet.main-grid
-					each val in ["","","","","",""]
-						.news-item
-							h3 Заголовок размещенной новости в несколько строк
-							img(src="../images/1.jpg")
-							.description Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh…
-							.ni-footer
-								.data
-									i
-									| 12 Июня 16:30
-								.btn-wc
-									a(href="#").btn.orange-border.small Подробнее
-				.subhead-cabinet
-					h2 Прошедшие мероприятия
-				.event-container-cabinet.main-grid
-					each val in ["",""]
-						.event-item
-							.ei-head
-								.data 
-									i 
-									| 2 Июня 12:30
-								.category-name Категория мероприятия
-							h3 Заголовок размещенного мероприятия в несколько…
-							.description Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus.
-							.ei-footer
-								.place 
-									i
-									| Новосибирск
-								.btn-wc
-									a(href="#").btn.orange-border.small Подробнее
-				.upload-btn-container
-						a.btn.orange-border.upload-more
+		.wrapper
+			.stub
+			
+			
+			.cabinet-all.main-grid
+				.cabinet-body
+					.subhead-cabinet
+						h2 Активные мероприятия
+						a.btn.orange.add-element(href="#")  
 							i +
-							span еще
-			.cabinet-side
-				.auto-jsCalendar(data-language="ru")
-				.cabinet-info
-					h3 Ваш тарифный план
-					.ci-line
-						span Тариф:
-						span Тариф
-					.ci-line
-						span Оплачено до:
-						span 23.03.2020
-					.ci-line
-						span Осталось мероприятий:
-						span 23
-					.ci-line
-						span Ограничения по городу:
-						span Нет ограничений
-					.ci-line
-						span Активные мероприятия:
-						span 5
+							span Создать мероприятие
+					.event-container-cabinet.main-grid
+						each val in ["","","","","",""]
+							.event-item
+								.ei-head
+									.data 
+										i 
+										| 2 Июня 12:30
+									.category-name Категория мероприятия
+								h3 Заголовок размещенного мероприятия в несколько…
+								.description Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus.
+								.ei-footer
+									.place 
+										i
+										| Новосибирск
+									.btn-wc
+										a(href="#").btn.orange-border.small Подробнее
+					.subhead-cabinet
+						h2 Ваши новости
+						a.btn.orange.add-element(href="#")  
+							i +
+							span Создать новость
+					.event-container-cabinet.main-grid
+						each val in ["","","","","",""]
+							.news-item
+								h3 Заголовок размещенной новости в несколько строк
+								img(src="../images/1.jpg")
+								.description Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh…
+								.ni-footer
+									.data
+										i
+										| 12 Июня 16:30
+									.btn-wc
+										a(href="#").btn.orange-border.small Подробнее
+					.subhead-cabinet
+						h2 Прошедшие мероприятия
+					.event-container-cabinet.main-grid
+						each val in ["",""]
+							.event-item
+								.ei-head
+									.data 
+										i 
+										| 2 Июня 12:30
+									.category-name Категория мероприятия
+								h3 Заголовок размещенного мероприятия в несколько…
+								.description Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus.
+								.ei-footer
+									.place 
+										i
+										| Новосибирск
+									.btn-wc
+										a(href="#").btn.orange-border.small Подробнее
+					.upload-btn-container
+							a.btn.orange-border.upload-more
+								i +
+								span еще
+				.cabinet-side
+					.auto-jsCalendar(data-language="ru")
+					.cabinet-info
+						h3 Ваш тарифный план
+						.ci-line
+							span Тариф:
+							span Тариф
+						.ci-line
+							span Оплачено до:
+							span 23.03.2020
+						.ci-line
+							span Осталось мероприятий:
+							span 23
+						.ci-line
+							span Ограничения по городу:
+							span Нет ограничений
+						.ci-line
+							span Активные мероприятия:
+							span 5

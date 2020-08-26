@@ -1,3 +1,19 @@
 nav {
   grid-column: 4/span 9;
 }
+
+.event-item .ei-footer {
+  display: block;
+}
+
+.event-item .btn-wc {
+  text-align: left;
+
+  margin: 10px 0 0px;
+
+}
+
+.event-item .description {
+  position: relative;
+  margin: 0 0 70px;
+}

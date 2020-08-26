@@ -1,4 +1,23 @@
+function eventItemHeight() {
+  var maxHeight = 0;
+  var eventItem = $(".event-item");
+  eventItem.removeAttr("style");
+  eventItem.each(function () {
+    if ($(this).height() > maxHeight) {
+      maxHeight = $(this).height();
+    }
+  });
+  eventItem.height(maxHeight);
+}
+
+$(window).on('load', eventItemHeight);
+$(window).on('resize', eventItemHeight);
+
 $(document).ready(function () {
+
+
+
+
 
   var owlEvent = $(".owl-event");
 
@@ -32,10 +51,11 @@ $(document).ready(function () {
   });
 
   function callback(event) {
-
+    var element = event.target;
     var items = event.item.count; // Number of items
     var item = event.item.index; // Position of the current item
-    $(".mobile-3").removeClass("active").eq(item).addClass("active");
+    $(element).parents(".main-grid").find(".mobile-3").removeClass("active").eq(item).addClass("active");
+
   }
 
   if ($(window).width() < 988) {

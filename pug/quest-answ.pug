@@ -9,31 +9,31 @@ html
     
 		include default/header-black.pug
 		// header
+		.wrapper
+			.stub
+			h1.global.color FAQ
 
-		.stub
-		h1.global.color FAQ
-
-		// faq-page
-		.faq-page
-			.question-part.main-grid.active
-				h2.qp-head 
-					i
-					|Раздел 1
-				each val in ["","","",""]
-					.question-item
-						img.qi-ico(src="../images/question.png")
-						.ei-text Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh.
-						.btn-wc
-							a.btn.orange-border.small(href="#") Посмотреть ответ
-			.question-part.main-grid
-				h2.qp-head
-					i
-					|Раздел 2
-				each val in ["","","",""]
-					.question-item
-						img.qi-ico(src="../images/question.png")
-						.ei-text Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh.
-						.btn-wc
-							a.btn.orange-border.small(href="#") Посмотреть ответ
-		
-		// faq-page
+			// faq-page
+			.faq-page
+				.question-part.main-grid.active
+					h2.qp-head 
+						i
+						|Раздел 1
+					each val in ["","","",""]
+						.question-item
+							img.qi-ico(src="../images/question.png")
+							.ei-text Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh.
+							.btn-wc
+								a.btn.orange-border.small(href="#") Посмотреть ответ
+				.question-part.main-grid
+					h2.qp-head
+						i
+						|Раздел 2
+					each val in ["","","",""]
+						.question-item
+							img.qi-ico(src="../images/question.png")
+							.ei-text Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh.
+							.btn-wc
+								a.btn.orange-border.small(href="#") Посмотреть ответ
+			
+			// faq-page

@@ -23,7 +23,6 @@ $hugeSize: 36px;
 
 body {
   font-size: $standartSize;
-  max-width: 480px;
 }
 
 .stub {
@@ -256,13 +255,16 @@ nav {
   .slider {
     grid-column: span 12;
     padding-top: 0;
+    height: auto;
+    margin: 0 0 30px;
 
     h3 {
       margin-bottom: 15px;
     }
 
     .owl-nav {
-      bottom: 0;
+
+      top: calc(100% + 330px);
     }
 
     .owl-stage-outer {
@@ -271,22 +273,29 @@ nav {
   }
 
   .slider-img {
-    @include positionElement(100%, 100%, 0, 0);
+    position: relative;
+    height: 300px;
+    grid-column: span 12;
+    margin: 0 0 30px;
 
-    .mobile-3,
-    .page {
-      bottom: 0;
-      left: 32%;
-      width: 36%;
+    img.mobile-3,
+    img.page {
+      width: 100%;
+      height: 100%;
+      left: 0;
       min-width: auto;
-      position: absolute;
+      object-fit: contain;
+      transform: translateX(0%) translateY(0px);
     }
 
-    .page {
-      width: 90%;
-      left: 10%;
+    img.page {}
+
+    .mobile-3.active {
+      transform: translateX(0%) translateY(0px);
     }
   }
+
+  .slider-img-page {}
 }
 
 .owl-nav .owl-prev,
@@ -577,6 +586,9 @@ nav {
 
 
 .event-container-cabinet {
+  .event-item {
+    max-width: initial;
+  }
 
   .event-item,
   .news-item {

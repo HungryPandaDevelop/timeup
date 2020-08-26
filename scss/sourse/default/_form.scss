@@ -130,7 +130,7 @@ textarea,
 /* -----popup-----*/
 .popup-wrapper {
   @include positionElement(100%, 100%, 0, 0, left, top, 3, flex, fixed);
-  background: $blackColor;
+  background: rgba(0, 0, 0, 0.5);
   transition: ease-out 0.25s;
 
   opacity: 0;

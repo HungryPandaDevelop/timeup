@@ -114,9 +114,9 @@ h2.global {
 
       &:before {
         content: "";
-        @include positionElement(45px, 45px, -55px);
+        @include positionElement(35px, 35px, -55px);
 
-        @include bgImageEl("../images/ok.jpg");
+        @include bgImageEl("../images/signs-2.png");
       }
     }
 
@@ -226,6 +226,8 @@ h2.global {
   display: inline-block;
   margin: 0 30px;
 
+  position: relative;
+
   .ei-head {
     display: flex;
     justify-content: space-between;
@@ -242,7 +244,7 @@ h2.global {
   .description {
     position: relative;
     // height: 70px;
-    margin: 0 0 17px;
+    margin: 0 0 35px;
   }
 
   .ei-footer {
@@ -250,6 +252,10 @@ h2.global {
     justify-content: space-between;
     color: $grayColor;
     margin: 0 0 0px;
+
+    position: absolute;
+    bottom: 15px;
+    width: calc(100% - 30px);
   }
 
   .btn-wc {

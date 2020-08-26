@@ -74,10 +74,14 @@ $(document).ready(function () {
     $(".close").on("click", function () {
         $(this).parents(".element-show").removeClass("show");
 
+        $(".wrapper, header").removeClass("blur");
     });
 
     $(".element-btn").on("click", function (e) {
         e.preventDefault();
+
+        $(".wrapper, header").addClass("blur");
+
         var activeIndex = $(this).attr("data-showEl");
         console.log("obj", activeIndex);
         $("[data-showEl='" + activeIndex + "'].element-show").toggleClass("show");

@@ -130,6 +130,13 @@
   font-family: "medium";
   color: $orangeColor;
   grid-column: span 3;
+  transition: ease-out 0.5s;
+
+  &:hover {
+    background: $orangeColor;
+    color: $whiteColor;
+    transform: scaleX(-1);
+  }
 }
 
 .question-answer-container {
