@@ -409,6 +409,7 @@ textarea,
 .popup-container .form {
   max-width: 390px;
   margin: 50px auto 30px;
+  padding: 0 15px;
 }
 .popup-container input,
 .popup-container textarea,
@@ -474,6 +475,14 @@ textarea,
 .popup-account ul,
 .popup-account li {
   display: block;
+}
+.popup-account ul a,
+.popup-account li a {
+  padding: 5px 0;
+}
+.popup-account .pa-info {
+  font-size: 14px;
+  margin: 10px 0 0;
 }
 
 /* -----popup-accautnt----*/
@@ -796,10 +805,10 @@ footer a {
   height: 860px;
   color: #ffffff;
   overflow: hidden;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/main-section.png");
+  background-image: url("../images/Background.svg");
 }
 .main-section .main-grid {
   position: relative;

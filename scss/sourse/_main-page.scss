@@ -9,7 +9,7 @@
   height: 860px;
   color: $whiteColor;
   overflow: hidden;
-  @include bgImageEl("../images/main-section.png", cover);
+  @include bgImageEl("../images/Background.svg", cover, bottom);
 
   .main-grid {
     position: relative;

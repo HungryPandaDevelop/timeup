@@ -177,6 +177,7 @@ textarea,
   .form {
     max-width: 390px;
     margin: 50px auto 30px;
+    padding: 0 15px;
   }
 
   input,
@@ -240,6 +241,16 @@ textarea,
   ul,
   li {
     display: block;
+
+    a {
+      padding: 5px 0;
+    }
+  }
+
+
+  .pa-info {
+    font-size: $smallSize;
+    margin: 10px 0 0;
   }
 }
 
