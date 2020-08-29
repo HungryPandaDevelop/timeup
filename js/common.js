@@ -16,9 +16,21 @@ $(window).on('resize', eventItemHeight);
 $(document).ready(function () {
 
 
-
-
-
+  $('.event-item h3, .news-item h3').each(function () {
+    $clamp(this, {
+      clamp: 2
+    });
+  });
+  $('.event-item .description').each(function () {
+    $clamp(this, {
+      clamp: 4
+    });
+  });
+  $('.news-item .description').each(function () {
+    $clamp(this, {
+      clamp: 5
+    });
+  });
   var owlEvent = $(".owl-event");
 
   owlEvent.owlCarousel({
