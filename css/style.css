@@ -2103,6 +2103,22 @@ h2.global span {
   margin-right: 15px;
 }
 
+.jsCalendar-current {
+  position: relative;
+}
+.jsCalendar-current::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  z-index: auto;
+  background: #feb25d;
+  border-radius: 100%;
+}
+
 /*cabinet-event*/
 /*cabinet-create-news*/
 /*cabinet-create-news*/

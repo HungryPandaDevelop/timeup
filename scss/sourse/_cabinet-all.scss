@@ -404,6 +404,16 @@
   }
 }
 
+.jsCalendar-current {
+  position: relative;
+
+  &::before {
+    content: "";
+    @include positionElement(6px, 6px, 0, 0, right);
+    background: $orangeColor;
+    border-radius: 100%;
+  }
+}
 
 /*cabinet-event*/
 
