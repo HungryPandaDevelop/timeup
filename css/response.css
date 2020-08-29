@@ -126,10 +126,11 @@
   }
   .main-section .mobile-box img {
     width: 200px;
-    margin-left: 60px;
+    margin-left: 0px;
   }
   .main-section .mobile-box .shadow {
     opacity: 0.2;
+    display: none;
   }
   .main-section .front-about {
     padding: 0;

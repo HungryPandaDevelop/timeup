@@ -117,11 +117,12 @@ nav {
 
     img {
       width: 200px;
-      margin-left: 60px;
+      margin-left: 0px;
     }
 
     .shadow {
       opacity: 0.2;
+      display: none;
     }
   }
 
@@ -196,6 +197,7 @@ nav {
 
     img {
       width: 210px;
+
     }
   }
 
