@@ -503,7 +503,10 @@
   }
 
   .ce-info {
-    display: none;
+    grid-column: span 12;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 
   .gallery-main,
@@ -534,6 +537,9 @@
   .gallery-navigation .g-next {
     right: 0;
     background-image: url(../images/next.png);
+  }
+  .gallery-navigation .dai-item.show {
+    display: inline-block;
   }
   .gallery-navigation .img-container {
     padding: 15px 0;

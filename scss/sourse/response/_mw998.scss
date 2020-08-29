@@ -603,7 +603,10 @@ nav {
 }
 
 .ce-info {
-  display: none;
+  grid-column: span 12;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
 }
 
 .gallery-main,
@@ -640,6 +643,10 @@ nav {
     right: 0;
 
     background-image: url(../images/next.png);
+  }
+
+  .dai-item.show {
+    display: inline-block;
   }
 
   .img-container {

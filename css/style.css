@@ -35,7 +35,7 @@ html {
   color: #444444;
   font-size: 18px;
   min-width: 320px;
-  min-height: 640px;
+  min-height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
@@ -45,6 +45,7 @@ html {
 .wrapper {
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 a {
@@ -138,6 +139,38 @@ h2 {
 .social {
   display: inline-block;
   vertical-align: middle;
+}
+.social i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.social .vk {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/social/v-b-2.svg");
+}
+.social .vk:hover {
+  background-image: url("../images/social/v-or-2.svg");
+}
+.social .inst {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/social/i-b-2.svg");
+}
+.social .inst:hover {
+  background-image: url("../images/social/i-or-2.svg");
+}
+.social .fb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/social/f-b.svg");
+}
+.social .fb:hover {
+  background-image: url("../images/social/f-or.svg");
 }
 .social a {
   display: inline-block;
@@ -1624,10 +1657,18 @@ h2.global span {
   color: #feb25d;
   grid-column: span 3;
   transition: ease-out 0.5s;
+  position: relative;
+}
+.tc-item .tc-inner {
+  position: relative;
+  transform: scaleX(1);
 }
 .tc-item:hover {
   background: #feb25d;
   color: #ffffff;
+  transform: scaleX(-1);
+}
+.tc-item:hover .tc-inner {
   transform: scaleX(-1);
 }
 
@@ -1873,6 +1914,7 @@ h2.global span {
 
 .event-container-cabinet {
   padding: 0;
+  margin: 0 0 60px;
   grid-column-gap: 15px;
 }
 .event-container-cabinet .event-item {
@@ -1940,6 +1982,13 @@ h2.global span {
   border-radius: 6px;
   box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
   background: #ffffff;
+}
+
+.cabinet-news-container .ce-head {
+  display: block;
+  float: left;
+  width: 60%;
+  margin-right: 15px;
 }
 
 .ce-head {
@@ -2047,7 +2096,7 @@ h2.global span {
 
 .btn-wc-bottom {
   grid-column: span 12;
-  margin: 30px 0 0;
+  margin: 75px 0 0;
 }
 .btn-wc-bottom .btn {
   width: 300px;

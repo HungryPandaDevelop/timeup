@@ -131,11 +131,21 @@
   color: $orangeColor;
   grid-column: span 3;
   transition: ease-out 0.5s;
+  position: relative;
+
+  .tc-inner {
+    position: relative;
+    transform: scaleX(1);
+  }
 
   &:hover {
     background: $orangeColor;
     color: $whiteColor;
     transform: scaleX(-1);
+
+    .tc-inner {
+      transform: scaleX(-1);
+    }
   }
 }
 

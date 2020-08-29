@@ -8,7 +8,7 @@ html {
 	color: $blackColor;
 	font-size: $standartSize;
 	min-width: 320px;
-	min-height: 640px;
+	min-height: 100vh;
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0;
@@ -20,6 +20,7 @@ html {
 .wrapper {
 	position: relative;
 	overflow: hidden;
+	min-height: 100vh;
 }
 
 a {
@@ -117,6 +118,36 @@ h2 {
 .social {
 	display: inline-block;
 	vertical-align: middle;
+
+	i {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+	}
+
+	.vk {
+		@include bgImageEl("../images/social/v-b-2.svg");
+
+		&:hover {
+			background-image: url("../images/social/v-or-2.svg");
+		}
+	}
+
+	.inst {
+		@include bgImageEl("../images/social/i-b-2.svg");
+
+		&:hover {
+			background-image: url("../images/social/i-or-2.svg");
+		}
+	}
+
+	.fb {
+		@include bgImageEl("../images/social/f-b.svg");
+
+		&:hover {
+			background-image: url("../images/social/f-or.svg");
+		}
+	}
 
 	a {
 		display: inline-block;
