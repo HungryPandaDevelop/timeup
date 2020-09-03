@@ -297,7 +297,14 @@ nav {
     }
   }
 
-  .slider-img-page {}
+  .slider-img-page {
+    height: 200px;
+  }
+}
+
+
+.owl-page.slider-owl .owl-nav {
+  top: calc(100% + 230px);
 }
 
 .owl-nav .owl-prev,

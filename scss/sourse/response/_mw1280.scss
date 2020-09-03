@@ -17,3 +17,18 @@ nav {
   position: relative;
   margin: 0 0 70px;
 }
+
+
+.ce-gallery {
+  grid-column: span 12;
+  width: auto;
+}
+
+.ce-info {
+  grid-column: 1/span 12;
+}
+
+.ce-info {
+  grid-column: 1/span 12;
+  padding-bottom: 60px;
+}

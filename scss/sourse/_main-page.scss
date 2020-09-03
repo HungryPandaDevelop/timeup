@@ -580,14 +580,15 @@ h2.global {
 }
 
 .line-1 {
-  @include positionElement(560px, 280px);
+  @include positionElement(30%, 280px);
   @include bgImageEl("../images/line-1.png");
+  background-position: right top;
 }
 
 .line-2 {
-  @include positionElement(1450px, 807px, 50%, 0, right);
-  @include bgImageEl("../images/line-2.png", contain, right top);
-  margin-right: -960px;
+  @include positionElement(100%, 860px, 0%, 0, right);
+  @include bgImageEl("../images/line-2.png", cover, bottom);
+
 }
 
 .line-3 {
